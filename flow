@@ -18,9 +18,9 @@ b.rank post by their # gme, pick 90% percentile
 ->most frequent topics->search if gme is within->yes->gme
 
 vader: modify some, add some verbs: long, short, HODL, DIMAOND HAND, FOMO,..........
-POST|SENTIMENT(vader)|   TOPIC1|FEATURE 1,2,3,4, from the text:len(text),func(text)|# COMMENT|#UPVOTES.......
+POST|SENTIMENT(vader)|   TOPIC1|FEATURE 1,2,3,4, from the text:len(text),func(text)|# COMMENT|#GME APPEARED|#UPVOTES.......
 01    4(about gme)
-02    0(about spy)
+02    0/NULL(about spy)  DELETE
 
 1ST DETECT WHETHER A POST CONTAINS OUR INTERESTED WORDS:: WORD LIST
 ASSIGN OVERALL SENTIMENT USING VADER
@@ -29,11 +29,19 @@ ASSIGN OVERALL SENTIMENT USING VADER
               1,0,1,0,0
               
  WORKFLOW:     
- 1. PROCESS 
- 2. DEFINED LIST OF INTERESTED WORDS: GME RELATED
- 3. TOPIC MODELLING(ALGO): EXTRACT MOST DICUSSED WORDS 
- 3. RE.SEARCH(REGEX PATTERN)
- 4. ASSIGN SENTIMENT USING VADER(DEFINE OUR OWN STANDARDS) ON EACH POST
+ 1. PROCESS: --WENYI  BY 12.1 
+ 2. DEFINED LIST OF INTERESTED WORDS: --ATABY   BY 12.1
+ GME RELATED
+  a. search online
+  b. count freq by ourself
+ ----->THEN GIVE IT TO REST OF TEAM OF EDA! 
+ 
+ 3. TOPIC MODELLING(ALGO): --MICHAEL  GET IT FROM WENYI AND THEN DONE BY FRIDAY
+ EXTRACT MOST DICUSSED WORDS->generate central topi features 
+ 3. RE.SEARCH(REGEX PATTERN): --3 OF US TOGETHER   BY FRI
+ ->whether it has words interested
+  -regex pattern: "gme|meme|..."
+ 4. ASSIGN SENTIMENT USING VADER(DEFINE OUR OWN STANDARDS) ON EACH POST    -- ATABY BY FRI 
 
  
 
