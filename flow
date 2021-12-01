@@ -1,0 +1,39 @@
+ch3: regex expression, tokenize words
+
+NECESSARY:raw doc-> sent_tokenize->word_tonekize->processing each word: remove stopword, lower them->LEMMA,STEMMER
+UNNESSARY:->tagging->chunking(NOUN PHRASES)->name entity recogintion
+
+
+"A like GME!"
+"A LIKE MEME STOCKS"
+
+LIST OF WORDS COMBINATION THAT WE CARE ABOUT: ........
+ 
+POST: RE.SEARCH('GME,GAMESTOP,MEME STOCKS, ...")+ VADER SCORE-> SCORE ->FEATURE OF THAT POST 
+
+1. rule defined ourself: 
+a.gme 2time+/1 time
+b.rank post by their # gme, pick 90% percentile
+2. topic modelling(algo): about gme
+->most frequent topics->search if gme is within->yes->gme
+
+vader: modify some, add some verbs: long, short, HODL, DIMAOND HAND, FOMO,..........
+POST|SENTIMENT(vader)|   TOPIC1|FEATURE 1,2,3,4, from the text:len(text),func(text)|# COMMENT|#UPVOTES.......
+01    4(about gme)
+02    0(about spy)
+
+1ST DETECT WHETHER A POST CONTAINS OUR INTERESTED WORDS:: WORD LIST
+ASSIGN OVERALL SENTIMENT USING VADER
+
+1000 TOPICS-> TOPIC 1,2,...,1000->Y
+              1,0,1,0,0
+              
+ WORKFLOW:     
+ 1. PROCESS 
+ 2. DEFINED LIST OF INTERESTED WORDS: GME RELATED
+ 3. TOPIC MODELLING(ALGO): EXTRACT MOST DICUSSED WORDS 
+ 3. RE.SEARCH(REGEX PATTERN)
+ 4. ASSIGN SENTIMENT USING VADER(DEFINE OUR OWN STANDARDS) ON EACH POST
+
+ 
+
