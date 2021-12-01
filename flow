@@ -42,6 +42,13 @@ ASSIGN OVERALL SENTIMENT USING VADER
  ->whether it has words interested
   -regex pattern: "gme|meme|..."
  4. ASSIGN SENTIMENT USING VADER(DEFINE OUR OWN STANDARDS) ON EACH POST    -- ATABY BY FRI 
+ 
+ ------------------------------------------------
+ FEATURE ENGINEERING: MICHAEL
+ MODELLING: MICHAEL
+ 
+ 
+ EDA, SLIDES, GRAPHS: OTHER PPL
 
  
 
