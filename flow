@@ -50,5 +50,10 @@ ASSIGN OVERALL SENTIMENT USING VADER
  
  EDA, SLIDES, GRAPHS: OTHER PPL
 
- 
-
+ ##source
+https://swaggystocks.com/dashboard/wallstreetbets/how-it-works
+Our process is this: we scrape top-rated comments from top-rated posts on the WallStreetBets subreddit and analyze the content for any stock ticker mentions. 
+When a stock ticker is found, we run the comment through a neural network and the sentiment analysis is performed. 
+The stock sentiment is either positive with a value from 1 to 100, or it is negative with a value from -1 to -100. 
+The neural net uses "bag of words" pre-processing, meaning that word order and sentence structure is lost. 
+However, we find that the analysis is fairly accurate due to the general simplicity of the comments people write on reddit.
