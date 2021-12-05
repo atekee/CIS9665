@@ -1,0 +1,24 @@
+cleaned_text->feature_extractor
+
+ataby: sentiment
+michael: freq of any word
+
+1. NLP: # of nouns, noun phrase, name entities()
+REGEX:
+TOKENIZE->TAG
+- sell stock: VERB+NN
+- HEDGE FUND: NN+NN
+-
+
+2.
+summary_stat of past 24 hr: avg .....
+
+ GME STOCK MOVEMENT BEFORE THE DAY OF POST
+-1 DAY, -2 DAY, -1 WEEK PERFORMACE
+
+-> POST_i.time-24hr: other post avg # of upvotes->
+
+
+3....
+nlp lectures:
+lexical richness.....
